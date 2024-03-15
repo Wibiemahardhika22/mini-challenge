@@ -1,1 +1,0 @@
-Dart Fundamental Mini Challenge #1 - MIKTI
