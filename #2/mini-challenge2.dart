@@ -13,19 +13,25 @@ void main() {
     stdout.write('Masukkan suhu dalam Fahrenheit: ');
     num fahrenheit = num.parse(stdin.readLineSync()!);
     num celsiusFromFahrenheit = fahrenheitToCelsius(fahrenheit);
-    print('$fahrenheit derajat Fahrenheit = $celsiusFromFahrenheit derajat Celsius');
+    
+    // Menggunakan toStringAsFixed agar hasilnya hanya 2 angka di belakang koma    
+    print('$fahrenheit derajat Fahrenheit = ${celsiusFromFahrenheit.toStringAsFixed(2)} derajat Celsius');
   } else if (pilihan == '2') {
     print("Anda memilih Reamur ke Celsius");
     stdout.write('Masukkan suhu dalam Reamur: ');
     num reamur = num.parse(stdin.readLineSync()!);
     num celsiusFromReamur = reamurToCelsius(reamur);
-    print('$reamur derajat Reamur = $celsiusFromReamur derajat Celsius');
+
+    // Menggunakan toStringAsFixed agar hasilnya hanya 2 angka di belakang koma    
+    print('$reamur derajat Reamur = ${celsiusFromReamur.toStringAsFixed(2)} derajat Celsius');
   } else if (pilihan == '3') {
     print("Anda memilih Kelvin ke Celsius");
     stdout.write('Masukkan suhu dalam Kelvin: ');
     num kelvin = num.parse(stdin.readLineSync()!);
     num celsiusFromKelvin = kelvinToCelsius(kelvin);
-    print('$kelvin derajat Kelvin = $celsiusFromKelvin derajat Celsius');
+
+    // Menggunakan toStringAsFixed agar hasilnya hanya 2 angka di belakang koma    
+    print('$kelvin derajat Kelvin = ${celsiusFromKelvin.toStringAsFixed(2)} derajat Celsius');
   } else {
     print('Maaf, pilihan anda tidak valid!');
   }
