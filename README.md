@@ -1,2 +1,2 @@
-# Dart Fundamental Mini Challenge - MIKTI
+# Mini Challenge - MIKTI
 - Wibie Mahardhika Adi
